@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
   // allocate input buffer
   float* input_buffer;
   posix_memalign(
-    (void**)&input_buffer, 
+    (void**) &input_buffer, 
     (size_t) 16, 
     (size_t) SOURCE_BUFFER_SIZE * sizeof(float)  // calculate how many /bytes/ to allocate
   );
